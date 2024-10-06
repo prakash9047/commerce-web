@@ -1,9 +1,4 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { DollarSign, CreditCard, TrendingUp } from 'lucide-react';
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -12,167 +7,159 @@ import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
+// Navigation items
 export const navItems = [
   { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
   { label: "Testimonials", href: "#" },
 ];
 
+// Testimonials data
+
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
+    user: "Alice Johnson",
+    company: "Wealth Management Corp",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "The financial tools and insights provided by this platform have transformed our investment strategies. Their solutions are effective and easy to use.",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    user: "Robert Brown",
+    company: "Capital Strategies Ltd.",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
-  },
-  {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
-  },
-  {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    text: "Our financial analysis capabilities have greatly improved thanks to the comprehensive tools offered here. The customer service is also top-notch.",
   },
   {
     user: "Emily Davis",
-    company: "Synergy Systems",
+    company: "Prosperity Partners",
+    image: user3,
+    text: "This platform has been a game-changer for managing our financial portfolios. The accuracy of the data and ease of use have exceeded our expectations.",
+  },
+  {
+    user: "Michael Wilson",
+    company: "Secure Investments",
+    image: user4,
+    text: "The team provided exceptional support and innovative solutions that streamlined our financial processes. We highly recommend their services.",
+  },
+  {
+    user: "Sophia Turner",
+    company: "Growth Financials",
+    image: user5,
+    text: "Thanks to this platform, we now have a clearer understanding of our financial health and growth opportunities. Their tools are both powerful and user-friendly.",
+  },
+  {
+    user: "James Wilson",
+    company: "Future Finance Advisors",
     image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    text: "The depth of financial insights and the quality of the tools provided have greatly enhanced our decision-making processes. Excellent service and results!",
   },
 ];
 
+// Features data
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <DollarSign />,
+    text: "Budget Management",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Manage your budget efficiently by setting limits and tracking expenses.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <CreditCard />,
+    text: "Expense Tracking",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Track your daily, weekly, and monthly expenses with ease.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <TrendingUp />,
+    text: "Financial Goals",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
-  },
-  {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Set and achieve your financial goals by planning ahead.",
   },
 ];
 
+// Re-adding checklistItems
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Efficient Budget Tracking",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Seamlessly monitor your budget with real-time updates and insights.",
   },
   {
-    title: "Review code without worry",
+    title: "Automated Expense Management",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Automatically categorize and manage your expenses to save time and effort.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Smart Financial Goals",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Set and track financial goals with actionable insights and personalized recommendations.",
   },
   {
-    title: "Share work in minutes",
+    title: "Comprehensive Spending Analysis",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Analyze your spending patterns with detailed reports and visualizations.",
   },
 ];
 
+
+// Re-adding pricingOptions
 export const pricingOptions = [
   {
     title: "Free",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Basic Budget Management",
+      "Expense Tracking",
+      "Financial Goal Setting",
+      "Spending Visualization",
     ],
   },
   {
     title: "Pro",
     price: "$10",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Advanced Budget Management",
+      "Expense Tracking",
+      "AI-driven Financial Advice",
+      "Spending Visualization",
+      "Bank Account Integration",
     ],
   },
   {
     title: "Enterprise",
     price: "$200",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Full Suite of Features",
+      "Unlimited Budget Tracking",
+      "Priority Support",
+      "Custom Integrations",
     ],
   },
 ];
 
+// Resources links
+// Resources links
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  { href: "#", text: "User Guide" },
+  { href: "#", text: "Financial Tools Overview" },
+  { href: "#", text: "FAQ" },
+  { href: "#", text: "Support Center" },
 ];
 
+// Platform links
 export const platformLinks = [
   { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "#", text: "Supported Accounts" },
+  { href: "#", text: "Security Measures" },
+  { href: "#", text: "Integrations" },
+  { href: "#", text: "Updates" },
 ];
 
+// Community links
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: "#", text: "Webinars" },
+  { href: "#", text: "Workshops" },
+  { href: "#", text: "Networking Events" },
+  { href: "#", text: "Case Studies" },
+  { href: "#", text: "Careers" },
 ];
